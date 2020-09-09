@@ -4,5 +4,110 @@
         <name>AspNetCore.Skeleton</name>
     </assembly>
     <members>
+        <member name="T:AspNetCore.Skeleton.Extensions.IApplicationBuilderExtensions.ApplicationBuilderExceptionMiddlewareExtension">
+            <summary>
+            Exception Middleware extension for the application builder
+            </summary>
+        </member>
+        <member name="P:AspNetCore.Skeleton.Extensions.IApplicationBuilderExtensions.ApplicationBuilderExceptionMiddlewareExtension.AppName">
+            <summary>
+            Name of the application writed in every error
+            </summary>
+        </member>
+        <member name="M:AspNetCore.Skeleton.Extensions.IApplicationBuilderExtensions.ApplicationBuilderExceptionMiddlewareExtension.ConfigureExceptionHandler(Microsoft.AspNetCore.Builder.IApplicationBuilder,System.String)">
+            <summary>
+            ConfigureExceptionHandler
+            </summary>
+            <param name="app"></param>
+            <param name="appName"></param>
+        </member>
+        <member name="T:AspNetCore.Skeleton.Extensions.IApplicationBuilderExtensions.ApplicationBuilderSwaggerExtension">
+            <summary>
+            Swagger extension methodes for IApplicationBuilder
+            </summary>
+        </member>
+        <member name="M:AspNetCore.Skeleton.Extensions.IApplicationBuilderExtensions.ApplicationBuilderSwaggerExtension.UseSwaggerConfiguration(Microsoft.AspNetCore.Builder.IApplicationBuilder)">
+            <summary>
+            Do application builder swagger configuration
+            </summary>
+            <param name="app"></param>
+        </member>
+        <member name="T:AspNetCore.Skeleton.Extensions.IServiceCollectionExtensions.ServiceCollectionSwaggerExtension">
+            <summary>
+            Swagger extension methodes for IServiceCollection
+            </summary>
+        </member>
+        <member name="M:AspNetCore.Skeleton.Extensions.IServiceCollectionExtensions.ServiceCollectionSwaggerExtension.AddSwaggerConfiguration(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Do service collection swagger configuration
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="T:AspNetCore.Skeleton.Models.CustomProblemDetails">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:AspNetCore.Skeleton.Models.CustomProblemDetails.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="M:AspNetCore.Skeleton.Models.CustomProblemDetails.#ctor(System.String,System.Nullable{System.Int32},System.String)">
+            <summary>
+            Constructor with params
+            </summary>
+            <param name="title">Title of the error</param>
+            <param name="status">Http status of the error</param>
+            <param name="detail">Detail of the error</param>
+        </member>
+        <member name="P:AspNetCore.Skeleton.Models.CustomProblemDetails.Instance">
+            <summary>
+            A URI reference that identifies the specific occurrence of the problem.It may or may not yield further information if dereferenced.
+            </summary>
+        </member>
+        <member name="M:AspNetCore.Skeleton.Models.CustomProblemDetails.ToJson">
+            <summary>
+            Return a json formated string
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:AspNetCore.Skeleton.Program">
+            <summary>
+            Program
+            </summary>
+        </member>
+        <member name="M:AspNetCore.Skeleton.Program.Main(System.String[])">
+            <summary>
+            Main
+            </summary>
+            <param name="args">args</param>
+        </member>
+        <member name="M:AspNetCore.Skeleton.Program.CreateHostBuilder(System.String[])">
+            <summary>
+            CreateHostBuilder
+            </summary>
+            <param name="args">args</param>
+            <returns></returns>
+        </member>
+        <member name="T:AspNetCore.Skeleton.Startup">
+            <summary>
+            Startup
+            </summary>
+        </member>
+        <member name="M:AspNetCore.Skeleton.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            This method gets called by the runtime. Use this method to add services to the container.
+            For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
+            </summary>
+            <param name="services">IServiceCollection</param>
+        </member>
+        <member name="M:AspNetCore.Skeleton.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+            <summary>
+            This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+            </summary>
+            <param name="app">IApplicationBuilder</param>
+            <param name="env">IWebHostEnvironment</param>
+        </member>
     </members>
 </doc>

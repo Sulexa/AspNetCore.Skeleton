@@ -2,8 +2,15 @@
 
 namespace AspNetCore.Skeleton.Extensions.IApplicationBuilderExtensions
 {
+    /// <summary>
+    /// Swagger extension methodes for IApplicationBuilder
+    /// </summary>
     public static class ApplicationBuilderSwaggerExtension
     {
+        /// <summary>
+        /// Do application builder swagger configuration
+        /// </summary>
+        /// <param name="app"></param>
         public static void UseSwaggerConfiguration(this IApplicationBuilder app)
         {
             if (app is null)

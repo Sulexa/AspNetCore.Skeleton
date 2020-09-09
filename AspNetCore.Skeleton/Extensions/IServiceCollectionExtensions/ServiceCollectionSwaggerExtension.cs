@@ -4,13 +4,19 @@ using System;
 using System.IO;
 using System.Reflection;
 
-/// <summary>
-/// Install-Package Swashbuckle.AspNetCore -Version 5.5.1
-/// </summary>
+// Install-Package Swashbuckle.AspNetCore -Version 5.5.1
+
 namespace AspNetCore.Skeleton.Extensions.IServiceCollectionExtensions
 {
+    /// <summary>
+    /// Swagger extension methodes for IServiceCollection
+    /// </summary>
     public static class ServiceCollectionSwaggerExtension
     {
+        /// <summary>
+        /// Do service collection swagger configuration
+        /// </summary>
+        /// <param name="services"></param>
         public static void AddSwaggerConfiguration(this IServiceCollection services)
         {
             if (services is null)
